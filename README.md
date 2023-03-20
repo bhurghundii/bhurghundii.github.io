@@ -1,32 +1,4 @@
-<div align="center">
-  <h1>
 
-  ✍️
-
-  Handmade Blog
-
-  [![build](https://img.shields.io/github/actions/workflow/status/parksb/handmade-blog/nodejs.yml?branch=master&style=flat-square)](https://github.com/parksb/handmade-blog/actions?query=workflow%3A%22Node+CI%22) ![node](https://img.shields.io/badge/node-%3E%3D%2010.0-brightgreen?style=flat-square) [![demo](https://img.shields.io/netlify/3f01acb3-1107-470a-914f-90d100b87d85?label=demo&style=flat-square)](https://handmade-blog.netlify.com/) [![license](https://img.shields.io/github/license/parksb/handmade-blog?style=flat-square)](LICENSE)
-
-  </h1>
-
-  <strong>Read this document in another language:</strong> [:kr:](_docs/README-KO.md) [:indonesia:](_docs/README-ID.md) [:brazil:](_docs/README-PT-BR.md) [:it:](_docs/README-IT.md) [:malaysia:](_docs/README-MS.md) [:greece:](_docs/README-EL.md) [:vietnam:](_docs/README-VI.md)
-</div>
-
-Handmade Blog is a lightweight static blog generator for people who want to start a blog quickly. It supports article type document for a blog post, work type document for portfolio, code highlights, [KaTeX](https://katex.org/) syntax, footnotes, and more.
-
-## Demo: [Here](https://handmade-blog.vercel.app/)
-
-![Article page preview](https://user-images.githubusercontent.com/6410412/74097056-be43d100-4b4a-11ea-806b-7bd263d7f623.png)
-
-## Lighthouse results
-
-**[article/0.html](https://handmade-blog.vercel.app/article/0.html) on mobile**
-
-![Performance 94, Accessibility 100, Best Practices 100, SEO 92, PWA N/A](https://user-images.githubusercontent.com/6410412/169649124-32f4bd18-f3ff-418d-8bb8-61ec6105877a.png)
-
-**[article/0.html](https://handmade-blog.vercel.app/article/0.html) on desktop**
-
-![Performance 99, Accessibility 100, Best Practices 92, SEO 91, PWA N/A](https://user-images.githubusercontent.com/6410412/169649130-7f0a82e1-21ac-4c7d-9efb-9f9908865b63.png)
 
 ## Getting Started
 
@@ -142,10 +114,6 @@ If you're ready to deploy, run `npm run deploy` script. You can change not only 
   * `models`
 * `tools` - Source code implementing various npm scripts.
 
-## Showcase
-
-* parksb.github.io: https://github.com/parksb/parksb.github.io
-* betty-grof.github.io: https://github.com/betty-grof/betty-grof.github.io
 
 ## Available Scripts
 
