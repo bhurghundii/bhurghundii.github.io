@@ -3,12 +3,12 @@ id: 0
 title: "Collaboration Guide"
 subtitle: "How to work with me if you want to collaborate"
 date: "2023.03.20"
-tags: "tag1, tag2"
+tags: "collaboration"
 ---
 
 This guide is to explain who I am for, and who I am not for. Years of being in this wonderful industry working with lots of people, here's a list of things which can help to figure out if I am the right person to collaborate with.
 
-## How to work with me:
+# How to work with me:
 
 1) We will get on really well if you are straight to the point, can roll with the punches and enjoys the process of creating something and getting feedback. I am way more interested in building a relationship to build ideas off.
 
@@ -16,7 +16,7 @@ This guide is to explain who I am for, and who I am not for. Years of being in t
 
 3) If you can switch off and relax, we will 100% get on well. I prefer to work with the long term in mind. That being said, if we need to crunch, I can totally do that.
 
-How to not work with me:
+# How to not work with me:
 
 1) If you need someone to blindly build your idea. Implementation isn't where my mind goes first (it's taken years to stop doing that.) I prefer to take time to understand what we are doing and if we have the right data to be making that kind of call.
 
