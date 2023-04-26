@@ -72,8 +72,7 @@
 }
 
 #article-navigation a:hover div {
-  background-color: black;
-  color: white;
+  color: red;
 }
 
 #article-list-button-container {
@@ -165,8 +164,7 @@
 #article-content-container a:hover,
 #article-content-container a:focus {
   text-decoration: none;
-  background-color: black;
-  color: white;
+  color: red;
 }
 
 #article-content-container pre {
@@ -218,8 +216,7 @@
 }
 
 #article-content-container details[open=""] > summary {
-  background-color: black;
-  color: white;
+  color: red;
 }
 
 #article-content-container summary {

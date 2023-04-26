@@ -23,8 +23,7 @@
 
 #work-container a:hover,
 #work-container a:focus {
-  color: white;
-  background-color: black;
+  color: red;
 }
 
 #work-container img {

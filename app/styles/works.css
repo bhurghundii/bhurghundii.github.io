@@ -19,8 +19,7 @@
 
 #works-container .works-content:hover,
 #works-container .works-content:focus {
-  background-color: black;
-  color: white;
+  color: red;
 }
 
 #works-container .works-content img {
