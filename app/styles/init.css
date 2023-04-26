@@ -25,6 +25,7 @@
   word-break: keep-all;
   font-feature-settings: normal;
   text-rendering: optimizeLegibility;
+  background-color: #faf0e6;
 }
 
 body {
