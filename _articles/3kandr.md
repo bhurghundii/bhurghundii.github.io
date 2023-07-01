@@ -1,5 +1,5 @@
 ---
-id: 4
+id: 3
 title: "Self studying C by going over K&R"
 subtitle: ""
 date: "2023.05.04"
@@ -9,6 +9,8 @@ tags: "c,programming"
 # I am self-studying C using K&R 
 
 K&R is considered the standard of C and I thought if I read it, it would give me great insight into programming and what's going on under hood.
+
+To prove I've read it and my words are legit, [here is my repo](https://github.com/vikadilly/k-r-c) 
 
 # Do you recommend it?
 If you are an absolute beginner, **no**. If you have experience in programming, it's a lot of fun!
