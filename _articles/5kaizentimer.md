@@ -18,19 +18,13 @@ That's pretty much it. I was really upset with the options available online beca
 
 Like seriously, what on Earth is going on here:
 
-![Image 1](image1.jpg)
 
 (This one gives you a pop-up in 5 seconds)
 
-![Image 2](image2.jpg)
 
 Google, you are not helping...
 
-![Image 3](image3.jpg)
-
 Now, feast your eyes on this:
-
-![Image 4](image4.jpg)
 
 Much nicer. Straight to the point too!
 
