@@ -1,5 +1,5 @@
 ---
-id: 3
+id: 1
 title: "Self studying C by going over K&R"
 subtitle: ""
 date: "2023.05.04"
