@@ -8,25 +8,13 @@ tags: "manual, kaizentimer, project docs"
 
 # Welcome to KaizenTimer!
 
-First of all, thank you for checking out my app. I hope it helps you as much as it helps me.
+I took the website down cause it was a pretty simple project but here is the source code: 
 
 ## What is KaizenTimer?
 
 It's a super minimalist timer web application that lets you add lots of timers *shrugs*.
 
 That's pretty much it. I was really upset with the options available online because they were so crowded and unfriendly, and the only good ones were behind some app subscription paywall. So I made my own, and honestly, it's perfect!
-
-Like seriously, what on Earth is going on here:
-
-
-(This one gives you a pop-up in 5 seconds)
-
-
-Google, you are not helping...
-
-Now, feast your eyes on this:
-
-Much nicer. Straight to the point too!
 
 ## How do I use it?
 
