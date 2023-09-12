@@ -18,10 +18,9 @@ make sure I could rediscover my ideas later on and build momentum on my projects
 
 # How I use Breadcrumb
 
-Breadcrumb excels at capture. 
+Breadcrumb excels at capture.
 
-I take pictures of things, record little songs / ambient noises, write down stray thoughts 
-and spam them on my dashboard. 
+I take pictures of things, record little songs / ambient noises, write down stray thoughts and spam them on my dashboard. 
 
 I can then tag them with whatever I want and come back to them later. It's helpful like that. 
 
