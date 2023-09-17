@@ -66,7 +66,7 @@ I used a GSI on the tags to give the app the search feature. I did it this way h
 
 ## Improvements
 
-* Note: I am 100% going to do these things. I need this app more than any of y'all * 
+*Note: I am 100% going to do these things. I need this app more than any of y'all* 
 
 In terms of actual feature work... I have to do things like let you upload high quality / long audio and then playback a thumbnail / sample of it and give you an option to download it later. I have been given some really good feedback on layouts and usability too so easy does it.
 

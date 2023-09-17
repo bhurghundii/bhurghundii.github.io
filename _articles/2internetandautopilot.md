@@ -1,7 +1,7 @@
 ---
 id: 2
-title: "The Internet and Autopilot"
-subtitle: "Does Anyone Else Have This?"
+title: "The Internet, Autopilot and Depression"
+subtitle: ""
 date: "2023-05-24"
 tags: "life, stuff"
 ---
