@@ -45,4 +45,5 @@ But the biggest benefit is that my relationship with FOSS remains pure and that 
 I refuse to play that game, and the quality of my work is better for it.
 
 [1] https://hackernoon.com/how-to-optimize-your-github-profile-9540f338b2c9
+
 [2] https://github.com/orgs/community/discussions/43862
