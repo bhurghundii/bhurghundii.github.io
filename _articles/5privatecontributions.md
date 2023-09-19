@@ -40,7 +40,7 @@ I have a pretty active profile
 
 ![septcontributions](/images/septcontribution.png) 
 
-You might think: Wow! This guy must be coding all the time! Truth is a lot of these are from me contributing to my own projects such as writing my own apps (which I can't open-source), updating the blog or just doing little bits here or there. A glance at this or my activity isn't an indicator of my quality - a commit is more than just a commit to a big name open source project. And Github is more than just a code sharing website now.
+You might think: Wow! This guy must be coding all the time! Truth is a lot of these are come from writing my own apps, updating the blog or just doing little bits here or there. A glance at this or my activity isn't an indicator of my quality - a commit is more than just a commit to a big name open source project. And Github is more than just a code sharing website now.
 
 ## On going dark
 
