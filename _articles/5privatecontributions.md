@@ -34,15 +34,22 @@ This only adds extra stress to the maintainers who have to go through the commit
 
 I once was reviewing a resume and I saw that one of the candidates had a profile full of green. Too green - like painting a square a certain shade. Turned out the guy had a bot that was just pumping a commit into some repo. That's where we are right now.
 
+### A note on whether doing this will hurt my chances of getting hired 
+
+I have a pretty active profile 
+
+![septcontributions](/images/septcontribution.png) 
+
+You might think: Wow! This guy must be coding all the time! Truth is a lot of these are from me contributing to my own projects such as writing my own apps (which I can't open-source), updating the blog or just doing little bits here or there. A glance at this or my activity isn't an indicator of my quality - a commit is more than just a commit to a big name open source project. And Github is more than just a code sharing website now.
+
 ## On going dark
 
-What I am doing is right for me. 
+What I am doing is right for me.
 
-One may argue it might hurt my possibilities of landing a new job in the future. That may be the case: I just put the big contributions on my resume. Besides, if you care that much, my repositories tab still has all my stuff on it too.
-
-But the biggest benefit is that my relationship with FOSS remains pure and that removes a lot of the mental baggage of trying to have a "perfect" Github profile. 
+My relationship with FOSS remains authentic and that removes a lot of the mental baggage of trying to have a "perfect" Github profile. 
 
 I refuse to play that game, and the quality of my work is better for it.
+
 
 [1] https://hackernoon.com/how-to-optimize-your-github-profile-9540f338b2c9
 
