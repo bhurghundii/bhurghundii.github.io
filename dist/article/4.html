@@ -1,0 +1,96 @@
+<!doctypehtml>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Breadcrumb</title>
+
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+
+  <link rel="shortcut icon"href="../assets/favicon.ico"type="image/x-icon">
+  <link rel="preload"href="../styles/article.css"as="style">
+  <link rel="stylesheet"href="../styles/article.css">
+</head>
+<body>
+  <header id="top-container"role="navigation">
+    <nav>
+  <a class="logo-link"href="/">
+    <h1>Vikadilly</h1>
+    <span>Vikram Chhapwale</span>
+  </a>
+  <small>
+    <a id="articles"class="info-link"href="/articles.html">Articles</a>
+  </small>
+</nav>
+
+  </header>
+  <main id="main-container">
+    <article id="article-container">
+      <h1 id="article-title">
+        Breadcrumb
+      </h1>
+      
+        <h2 id="article-subtitle">
+          Organise your things really easily
+        </h2>
+      
+      <time id="article-date">
+        2023-08-27
+      </time>
+
+      <section id="article-content-container">
+        <details><summary>Table of Contents</summary>
+<p><div class="table-of-contents"><ul><li><a href="#breadcrumb---organise-your-photos%2C-voice-clips-and-notes-with-just-a-hashtag">Breadcrumb - organise your photos, voice clips and notes with just a hashtag</a><ul><li><a href="#why-did-i-make-this%3F">Why did I make this?</a></ul><li><a href="#you-could-just-use-albums%3F">You could just use Albums?</a><li><a href="#instagram-and-social-media-have-got-this-right">Instagram and social media have got this right</a><li><a href="#and-that%E2%80%99s-not-all!">And that’s not all!</a><li><a href="#how-i-use-breadcrumb">How I use Breadcrumb</a><ul><li><a href="#technical-details">Technical Details</a><li><a href="#improvements">Improvements</a></ul></ul></div><p></p>
+</details>
+<h1 id="breadcrumb---organise-your-photos%2C-voice-clips-and-notes-with-just-a-hashtag"tabindex="-1">Breadcrumb - organise your photos, voice clips and notes with just a hashtag</h1>
+<p>This is a link to the website - <a href="https://www.breadcrumb.live/">Breadcrumb</a></p>
+<p>Breadcrumb is an app which lets you upload things like photos, voice clips and notes.</p>
+<p>You then can very quickly organise them by adding a hashtag to all your things. No need to think about folder hierarchies or creating a new album - just one word and you are done.</p>
+<p><img src="/images/breadcrumb.png"alt="photoroll"loading="lazy"decoding="async"width="1700"height="904"></p>
+<h2 id="why-did-i-make-this%3F"tabindex="-1">Why did I make this?</h2>
+<p>I am the kind of person who takes a lot of photos. And when I say a lot of photos, I mean a lot. The worst part is as WhatsApp user, all the photos people send me gets into my Albums. I will not lie: my photo roll is pretty useless.</p>
+<p><img src="/images/photoroll.png"alt="photoroll"loading="lazy"decoding="async"width="1125"height="1509"></p>
+<p>This really sucks: as an artist, I have to annoyingly scroll up and look for it.</p>
+<h1 id="you-could-just-use-albums%3F"tabindex="-1">You could just use Albums?</h1>
+<p>I have so many genres of photos and notes: sometimes a photo will be for my attempts to understand anatomy and sometimes, it will be for a natural landscape I’d like to do later. I desperately want that fine grained ability to organise stuff.</p>
+<h1 id="instagram-and-social-media-have-got-this-right"tabindex="-1">Instagram and social media have got this right</h1>
+<p>Incredibly, the only app I found which actually helped me do this was Instagram because I could use Hashtags in the photo description and search from there. It was so easy and offered that really easy inteface to work through. No more “Create a new Album” for me!</p>
+<h1 id="and-that%E2%80%99s-not-all!"tabindex="-1">And that’s not all!</h1>
+<p>I wanted the ability to also commentate on my photos too. Personally, I take a lot of voice notes. For a while, I have had to articulate my thoughts on a different app but not anymore! Breadcrumb lets you group the voice notes AND your photos in one place which is just magical for me: it’s amazing to be able to go into design meetings and just take a photo of what we are talking about, then just record hte meeting on my phone and just group them both for later playback together. Really helps you focus on the important stuff!</p>
+<h1 id="how-i-use-breadcrumb"tabindex="-1">How I use Breadcrumb</h1>
+<p>Breadcrumb excels at organising things super quickly.</p>
+<p>I take pictures of things, record my thoughts by speaking them out, write down stray thoughts and spam them on my dashboard.</p>
+<p>I can then tag them with whatever I want and come back to them later. It’s helpful like that.</p>
+<h2 id="technical-details"tabindex="-1">Technical Details</h2>
+<p><img src="/images/breadcrumbarch.png"alt="breadcrumbarch"loading="lazy"decoding="async"width="1640"height="2360"></p>
+<p>It’s just a simple 3 tier architecture: theres a user facing front-end, which talks to a bunch of services which sit behind an API gateway and those services do stuff for the user. Nothing fancy (yet (?) !)</p>
+<p>The front-end is written using Typescript, React and Vite. This is the first time I have used Vite in a serious way and I have to say I love it very much because the build times are just so ⚡️ snappy ⚡️</p>
+<p>I think I will use Vite as my go-to build tool because I love how compatible it is with the I do my React code.</p>
+<p>The application back-end is just a bunch of Python REST APIs written using Flask all routed to using API Gateway.</p>
+<p>Authentication and Hosting is managed using Amplify and calls to the back-end are authenticated using JWT tokens using the Amplify managed Userpool. This part was really surprising to me - it was very easy to get this set up (I was expecting to do some weird stuff because this managed by Amplify.)</p>
+<p>Metadata is stored in a DynamoDB table with attributes like the tags themselves. S3 is used to store media files. Nothing crazy.</p>
+<p>I used a GSI on the tags to give the app the search feature. I did it this way honestly because it was simple to do and I wanted DynamoDB to do as much filtering / lifting as possible. It works but I admit it isn’t that great because you can only use one tag per item (for now.)</p>
+<h2 id="improvements"tabindex="-1">Improvements</h2>
+<p><em>Note: I am 100% going to do these things. I need this app more than any of y’all</em></p>
+<p>In terms of actual feature work… I have to do things like let you upload high quality / long audio and then playback a thumbnail / sample of it and give you an option to download it later. I have been given some really good feedback on layouts and usability too so easy does it.</p>
+<p>In terms of improvements which were not necessary but I wanted to do… I regret not picking GraphQL for this and instead opting for REST APIs. It became painfully clear</p>
+
+      </section>
+      <section id="article-navigation">
+        
+        
+          <div class="article-navigation-item article-navigation-prev">
+            <a href="/article/3.html">
+              <div class="article-navigation-arrow article-navigation-prev">＞</div>
+              <div class="article-navigation-content article-navigation-prev">
+                <p class="article-navigation-title">KaizenTimer</p>
+                <p class="article-navigation-subtitle">A New Project by Me</p>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+    </article>
+  </main>
+
+
