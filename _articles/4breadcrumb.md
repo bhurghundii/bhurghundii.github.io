@@ -25,9 +25,15 @@ I am the kind of person who takes a lot of photos. And when I say a lot of photo
 
 This really sucks: as an artist, I have to annoyingly scroll up and look for it.
 
-# You could just use Albums? 
+# You could just use Albums or use the AI tagging systems? 
 
-I have so many genres of photos and notes: sometimes a photo will be for my attempts to understand anatomy and sometimes, it will be for a natural landscape I'd like to do later. I desperately want that fine grained ability to organise stuff.
+Great question and during my research, I found out that people were asked this too.
+
+![funnygoogle](/images/funnygoogle.png)
+
+Fundamentally, the problem is that when I take a photo of a cake or something, I usually want to use it for a different purpose than just it being a cake.
+Cause of my need for this, I have so many genres of photos and notes: sometimes a photo will be for my attempts to understand anatomy and sometimes, it will be for a natural landscape I'd like to do later. 
+I desperately wanted that fine-grained ability to organise stuff.
 
 # Instagram and social media have got this right
 
@@ -70,4 +76,4 @@ I used a GSI on the tags to give the app the search feature. I did it this way h
 
 In terms of actual feature work... I have to do things like let you upload high quality / long audio and then playback a thumbnail / sample of it and give you an option to download it later. I have been given some really good feedback on layouts and usability too so easy does it.
 
-In terms of improvements which were not necessary but I wanted to do... I regret not picking GraphQL for this and instead opting for REST APIs. It became painfully clear 
+In terms of improvements which were not necessary but I wanted to do... I regret not picking GraphQL for this and instead opting for REST APIs. It became painfully clear later that I needed the flexibility of GraphQL to do things like search and filter. I will probably do this later.
