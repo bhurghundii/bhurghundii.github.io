@@ -3,7 +3,7 @@ id: 0
 title: "Collaboration Guide"
 subtitle: "How to work with me if you want to collaborate"
 date: "2023.03.20"
-tags: "collaboration"
+tags: "aboutme"
 ---
 
 This guide is to explain who I am for, and who I am not for. Years of being in this wonderful industry working with lots of people, here's a list of things which can help to figure out if I am the right person to collaborate with.

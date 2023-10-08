@@ -3,7 +3,7 @@ id: 1
 title: "Self studying C by going over K&R"
 subtitle: ""
 date: "2023.05.04"
-tags: "c,programming"
+tags: "learning"
 ---
 
 # I am self-studying C using K&R 

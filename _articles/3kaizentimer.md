@@ -3,7 +3,7 @@ id: 3
 title: "KaizenTimer"
 subtitle: "A New Project by Me"
 date: "2023-06-28"
-tags: "manual, kaizentimer, project docs"
+tags: "release"
 ---
 
 # Welcome to KaizenTimer!

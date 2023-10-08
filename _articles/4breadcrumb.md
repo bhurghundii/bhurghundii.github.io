@@ -3,7 +3,7 @@ id: 4
 title: "Breadcrumb"
 subtitle: "Organise your things really easily"
 date: "2023-08-27"
-tags: "New Release"
+tags: "release"
 ---
 
 # Breadcrumb - organise your photos, voice clips and notes with just a hashtag

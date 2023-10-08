@@ -3,7 +3,7 @@ id: 2
 title: "The Internet and going on autopilot"
 subtitle: ""
 date: "2023-05-24"
-tags: "life, stuff"
+tags: "learning"
 ---
 
 I want to start this article off by saying that in no way do I blame my parents for this. I genuinely don't think anyone could have prepared themselves for the world we were getting ourselves into.
