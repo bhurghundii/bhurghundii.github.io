@@ -10,16 +10,18 @@ tags: "thoughts"
 
 I pose this question because I seldom hear the answer. We always talk about the best programming language to get hired or what is the best programming language to do X (see any programming conversation.)
 
-Let me be clear here: I am not saying that Python is the the best language. The real takeaway from this article is for you think about what is the most fun programming language for you. This is my perspective. If you find something else works, that's great. Don't just go and do this because I said so. Make up your own mind and decide what's right for your fun.
+Let me be clear here: I am not saying that Python is the the best language. The real takeaway from this article is for you think about what is the most fun programming language for you. 
 
-# Enter: Python
+## What is a fun programming language?
 
-Python is stupidly simple - you can just run '''python main.py''' and get running. There is no need to create "class Main", "main = do" or a compilation step. That makes it so simple to get started. It's a dynamic language and comes with a lot of batteries included. You can do a lot with just the standard library to get anything up and running.
+My interpretation is that fun means it gives you that feeling of joy when you use it. Theres a sort of artistic and creative joy you should be able to derive from it. That means it’s effortless and frictionless to go from your vision to some working form of your idea. 
+
+In fact, Python is stupidly simple - you can just run '''python main.py''' and get your program. There is no need to create "class Main", "main = do" or a compilation step. It's a dynamic language and comes with a lot of batteries included. You can do a lot with just the standard library to get anything up and running.
 
 Python is the equivalent of that really chill friend who's always down to do whatever idea you got. You've got to try really hard to piss it off. Cause it's just such a chill language, it's a lot of fun because you can just get started and do whatever you want.
 
-Python's package manager is an absolute beast when it comes to moving fast. Need an API up to test something? Spin up Flask and get it started. Need to do some number crunching? Numpy's got you. Need to do some machine learning? TensorFlow and PyTorch say Hello.
+Python's package manager is an absolute beast when it comes to moving fast. Need an API up to test something? Spin up Flask. Need to do some ML? Go get Tensorflow. 
 
-## How to practice Python
+## How to have fun with Python
 
-I spend a little time when I feel like doing programming puzzles like AoC, building my favorite technologies and also LeetCode. I will also spice things up and do things in other languages but I tend to write my solutions in Python first. I find it's the easiest to get started with and I can get a solution up and running quickly. I can then go back and optimize it in other languages. 
+Simple, just think of an idea and do it. It doesn’t have to be amazing or the next Google. Just go out and there and try it, without restraints. 
