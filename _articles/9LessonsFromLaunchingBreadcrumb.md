@@ -24,9 +24,13 @@ One thing in app design I did not consider the alternatives... or how easy the a
 LESSON 3: If you are going to build something, make sure it has less friction than the current solution.
 LESSON 4: Solve your problem before coding the solution. And when you solve your problem, read the docs.
 
-# Code is an optimization - not a solution
+# Build to learn, not to ship
 
 Given I made this app for myself, I feel like this lesson is a bit of a moot point. But I think it's worth mentioning. If I were to build for someone or even myself, I would start by creating an MVP using a wiremock with Figma or something. Make it super nice and see if there is an audience in there first. I made the mistake assuming a working prototype IS the MVP.
 
 LESSON 5: An MVP doesn't have to work. It can literally be a screen shot. You can ship a screen shot.
 LESSON 6: The most valuable work you can do is getting feedback from your users. Ship it on social media, ship it on Product Hunt / Reddit / Hacker News. Get feedback. Don't bother starting until you have some signal or unless you feel really really strong about it (in that case, just pull the trigger and ship it.)
+
+# Actions 
+
+I think I will get practice releasing stuff on Product Hunt and sharing my work. I got a working product here so I can share it on places like Reddit and stuff. That's a good start. 
