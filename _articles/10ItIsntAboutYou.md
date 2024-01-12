@@ -2,7 +2,7 @@
 id: 10
 title: "It isn't about you"
 subtitle: "A open letter to my friend, Josh"
-date: "2023-10-06"
+date: "2023-11-04"
 tags: "life lesson"
 ---
 
