@@ -1,7 +1,7 @@
 ---
 id: 4
-title: "Breadcrumb"
-subtitle: "Organise your things really easily"
+title: "Building things as a way out of malaise"
+subtitle: "Wake up honey, a new coping mechanism has  dropped"
 date: "2023-08-27"
 tags: "release"
 ---
@@ -77,3 +77,32 @@ I used a GSI on the tags to give the app the search feature. I did it this way h
 In terms of actual feature work... I have to do things like let you upload high quality / long audio and then playback a thumbnail / sample of it and give you an option to download it later. I have been given some really good feedback on layouts and usability too so easy does it.
 
 In terms of improvements which were not necessary but I wanted to do... I regret not picking GraphQL for this and instead opting for REST APIs. It became painfully clear later that I needed the flexibility of GraphQL to do things like search and filter. I will probably do this later.
+
+# Retrospective 
+
+To this date, Breadcrumb is being used by pretty much nobody. All the early users have stopped using it - including myself. That is OK - this post is all about a honest reflection.
+
+# Breadcrumb was made for nobody other than myself, and I did poor research into solving my own problem
+
+I think this is why a lot of the people who signed up eventually dropped off. At the start, I didn't really have a persona in mind. I just wanted to solve my own problem. And TBH, that's OK? I think it's OK to build something for yourself. In that sense, I think I was successful. I built something that I wanted to use. Good job!
+
+LESSON 1: Be honest with your goals. Retrofitting is bad.
+LESSON 2: Figure out who your honest users are. Find out where they are.
+
+# The friction of existing solutions < using Breadcrumb 
+
+One thing in app design I did not consider the alternatives... or how easy the alternative of just uploading all my media to Apple Notes with a title was. Hell, if I read the Photos docs a bit better, I would've noticed you could've just added a caption and sorted it. It really was exactly the same as Breadcrumb but had the added benefit of being on a native web app. 
+
+LESSON 3: If you are going to build something, make sure it has less friction than the current solution.
+LESSON 4: Solve your problem before coding the solution. And when you solve your problem, read the docs.
+
+# Build to learn, not to ship
+
+Given I made this app for myself, I feel like this lesson is a bit of a moot point. But I think it's worth mentioning. If I were to build for someone or even myself, I would start by creating an MVP using a wiremock with Figma or something. Make it super nice and see if there is an audience in there first. I made the mistake assuming a working prototype IS the MVP.
+
+LESSON 5: An MVP doesn't have to work. It can literally be a screen shot. You can ship a screen shot.
+LESSON 6: The most valuable work you can do is getting feedback from your users. Ship it on social media, ship it on Product Hunt / Reddit / Hacker News. Get feedback. Don't bother starting until you have some signal or unless you feel really really strong about it (in that case, just pull the trigger and ship it.)
+
+# Actions 
+
+I think I will get practice releasing stuff on Product Hunt and sharing my work. I got a working product here so I can share it on places like Reddit and stuff. That's a good start. 

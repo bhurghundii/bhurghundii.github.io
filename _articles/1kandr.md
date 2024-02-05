@@ -1,12 +1,12 @@
 ---
 id: 1
-title: "Self studying C by going over K&R"
-subtitle: ""
+title: "Does the Holy Trilogy of Computer Science still hold?"
+subtitle: "K&R C, SICP, and CLRS"
 date: "2023.05.04"
-tags: "learning"
+tags: "classics"
 ---
 
-# I am self-studying C using K&R 
+# The Computer Science field is no exception to heralding
 
 K&R is considered the standard of C and I thought if I read it, it would give me great insight into programming and what's going on under hood.
 

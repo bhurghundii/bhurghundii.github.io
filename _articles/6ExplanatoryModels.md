@@ -1,7 +1,7 @@
 ---
 id: 6
-title: "Songs that you can see"
-subtitle: "Just a running list of songs that you can see"
+title: "The Death of Explanatory Models"
+subtitle: "The biggest problem with AI is how it's getting started"
 date: "2023-10-06"
 tags: "thoughts"
 ---

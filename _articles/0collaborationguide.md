@@ -21,4 +21,3 @@ This guide is to explain who I am for, and who I am not for. Years of being in t
 1) If you need someone to blindly build your idea. Implementation isn't where my mind goes first (it's taken years to stop doing that.) I prefer to take time to understand what we are doing and if we have the right data to be making that kind of call.
 
 2) If you are a technical zealot, then we probably won't get on. I have stacks I enjoy using but when it comes to this sort of thing, I just prefer to understand the trade-offs and use whatever gets the job done in the way we need it.
-s

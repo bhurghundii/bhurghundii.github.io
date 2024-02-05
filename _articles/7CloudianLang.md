@@ -1,6 +1,6 @@
 ---
 id: 7
-title: "CloudianLang"
+title: "Diagramming Tools and the Accessibility problem"
 subtitle: "A language for generating AWS diagrams"
 date: "2023-10-29"
 tags: "new release"

@@ -1,12 +1,12 @@
 ---
 id: 3
-title: "KaizenTimer"
-subtitle: "A New Project by Me"
+title: "Is the Wild West of Front-End worth exploring?"
+subtitle: "Cowboy coding with cowboy tech"
 date: "2023-06-28"
-tags: "release"
+tags: "nextjs"
 ---
 
-# Welcome to KaizenTimer!
+# It ain't much, and it ain't gonna be much
 
 I took the website down cause it was a pretty simple project but here is the source code: 
 

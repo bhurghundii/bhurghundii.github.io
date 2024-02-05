@@ -1,7 +1,7 @@
 ---
 id: 8
-title: "Documentation is really hard"
-subtitle: "A lesson from writing docs that other people consume"
+title: "Should we start using sprint points for documentation"
+subtitle: "Developers, developers, developers"
 date: "2023-11-03"
 tags: "software"
 ---
