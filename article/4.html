@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Breadcrumb</title>
+  <title>Building things as a way out of malaise</title>
 
   <meta name="viewport"content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible"content="ie=edge">
@@ -26,11 +26,11 @@
   <main id="main-container">
     <article id="article-container">
       <h1 id="article-title">
-        Breadcrumb
+        Building things as a way out of malaise
       </h1>
       
         <h2 id="article-subtitle">
-          Organise your things really easily
+          Wake up honey, a new coping mechanism has  dropped
         </h2>
       
       <time id="article-date">
@@ -39,7 +39,7 @@
 
       <section id="article-content-container">
         <details><summary>Table of Contents</summary>
-<p><div class="table-of-contents"><ul><li><a href="#breadcrumb---organise-your-photos%2C-voice-clips-and-notes-with-just-a-hashtag">Breadcrumb - organise your photos, voice clips and notes with just a hashtag</a><ul><li><a href="#why-did-i-make-this%3F">Why did I make this?</a></ul><li><a href="#you-could-just-use-albums-or-use-the-ai-tagging-systems%3F">You could just use Albums or use the AI tagging systems?</a><li><a href="#instagram-and-social-media-have-got-this-right">Instagram and social media have got this right</a><li><a href="#and-that%E2%80%99s-not-all!">And that’s not all!</a><li><a href="#how-i-use-breadcrumb">How I use Breadcrumb</a><ul><li><a href="#technical-details">Technical Details</a><li><a href="#improvements">Improvements</a></ul></ul></div><p></p>
+<p><div class="table-of-contents"><ul><li><a href="#breadcrumb---organise-your-photos%2C-voice-clips-and-notes-with-just-a-hashtag">Breadcrumb - organise your photos, voice clips and notes with just a hashtag</a><ul><li><a href="#why-did-i-make-this%3F">Why did I make this?</a></ul><li><a href="#you-could-just-use-albums-or-use-the-ai-tagging-systems%3F">You could just use Albums or use the AI tagging systems?</a><li><a href="#instagram-and-social-media-have-got-this-right">Instagram and social media have got this right</a><li><a href="#and-that%E2%80%99s-not-all!">And that’s not all!</a><li><a href="#how-i-use-breadcrumb">How I use Breadcrumb</a><ul><li><a href="#technical-details">Technical Details</a><li><a href="#improvements">Improvements</a></ul><li><a href="#retrospective">Retrospective</a><li><a href="#breadcrumb-was-made-for-nobody-other-than-myself%2C-and-i-did-poor-research-into-solving-my-own-problem">Breadcrumb was made for nobody other than myself, and I did poor research into solving my own problem</a><li><a href="#the-friction-of-existing-solutions-%3C-using-breadcrumb">The friction of existing solutions &lt; using Breadcrumb</a><li><a href="#build-to-learn%2C-not-to-ship">Build to learn, not to ship</a><li><a href="#actions">Actions</a></ul></div><p></p>
 </details>
 <h1 id="breadcrumb---organise-your-photos%2C-voice-clips-and-notes-with-just-a-hashtag"tabindex="-1">Breadcrumb - organise your photos, voice clips and notes with just a hashtag</h1>
 <p>This is a link to the website - <a href="https://www.breadcrumb.live/">Breadcrumb</a></p>
@@ -77,6 +77,22 @@ I desperately wanted that fine-grained ability to organise stuff.</p>
 <p><em>Note: I am 100% going to do these things. I need this app more than any of y’all</em></p>
 <p>In terms of actual feature work… I have to do things like let you upload high quality / long audio and then playback a thumbnail / sample of it and give you an option to download it later. I have been given some really good feedback on layouts and usability too so easy does it.</p>
 <p>In terms of improvements which were not necessary but I wanted to do… I regret not picking GraphQL for this and instead opting for REST APIs. It became painfully clear later that I needed the flexibility of GraphQL to do things like search and filter. I will probably do this later.</p>
+<h1 id="retrospective"tabindex="-1">Retrospective</h1>
+<p>To this date, Breadcrumb is being used by pretty much nobody. All the early users have stopped using it - including myself. That is OK - this post is all about a honest reflection.</p>
+<h1 id="breadcrumb-was-made-for-nobody-other-than-myself%2C-and-i-did-poor-research-into-solving-my-own-problem"tabindex="-1">Breadcrumb was made for nobody other than myself, and I did poor research into solving my own problem</h1>
+<p>I think this is why a lot of the people who signed up eventually dropped off. At the start, I didn’t really have a persona in mind. I just wanted to solve my own problem. And TBH, that’s OK? I think it’s OK to build something for yourself. In that sense, I think I was successful. I built something that I wanted to use. Good job!</p>
+<p>LESSON 1: Be honest with your goals. Retrofitting is bad.
+LESSON 2: Figure out who your honest users are. Find out where they are.</p>
+<h1 id="the-friction-of-existing-solutions-%3C-using-breadcrumb"tabindex="-1">The friction of existing solutions &lt; using Breadcrumb</h1>
+<p>One thing in app design I did not consider the alternatives… or how easy the alternative of just uploading all my media to Apple Notes with a title was. Hell, if I read the Photos docs a bit better, I would’ve noticed you could’ve just added a caption and sorted it. It really was exactly the same as Breadcrumb but had the added benefit of being on a native web app.</p>
+<p>LESSON 3: If you are going to build something, make sure it has less friction than the current solution.
+LESSON 4: Solve your problem before coding the solution. And when you solve your problem, read the docs.</p>
+<h1 id="build-to-learn%2C-not-to-ship"tabindex="-1">Build to learn, not to ship</h1>
+<p>Given I made this app for myself, I feel like this lesson is a bit of a moot point. But I think it’s worth mentioning. If I were to build for someone or even myself, I would start by creating an MVP using a wiremock with Figma or something. Make it super nice and see if there is an audience in there first. I made the mistake assuming a working prototype IS the MVP.</p>
+<p>LESSON 5: An MVP doesn’t have to work. It can literally be a screen shot. You can ship a screen shot.
+LESSON 6: The most valuable work you can do is getting feedback from your users. Ship it on social media, ship it on Product Hunt / Reddit / Hacker News. Get feedback. Don’t bother starting until you have some signal or unless you feel really really strong about it (in that case, just pull the trigger and ship it.)</p>
+<h1 id="actions"tabindex="-1">Actions</h1>
+<p>I think I will get practice releasing stuff on Product Hunt and sharing my work. I got a working product here so I can share it on places like Reddit and stuff. That’s a good start.</p>
 
       </section>
       <section id="article-navigation">
@@ -96,8 +112,8 @@ I desperately wanted that fine-grained ability to organise stuff.</p>
             <a href="/article/3.html">
               <div class="article-navigation-arrow article-navigation-prev">＞</div>
               <div class="article-navigation-content article-navigation-prev">
-                <p class="article-navigation-title">KaizenTimer</p>
-                <p class="article-navigation-subtitle">A New Project by Me</p>
+                <p class="article-navigation-title">Is the Wild West of Front-End worth exploring?</p>
+                <p class="article-navigation-subtitle">Cowboy coding with cowboy tech</p>
               </div>
             </a>
           </div>
