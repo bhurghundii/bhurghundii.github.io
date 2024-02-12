@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Python is the most fun programming language</title>
+  <title>Diagramming Tools and the Accessibility problem</title>
 
   <meta name="viewport"content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible"content="ie=edge">
@@ -26,31 +26,68 @@
   <main id="main-container">
     <article id="article-container">
       <h1 id="article-title">
-        Python is the most fun programming language
+        Diagramming Tools and the Accessibility problem
       </h1>
       
         <h2 id="article-subtitle">
-          My take on what is the most fun programming language
+          Introducing a DSL for generating AWS diagrams
         </h2>
       
       <time id="article-date">
-        2023-10-08
+        2023-10-29
       </time>
 
       <section id="article-content-container">
         <details><summary>Table of Contents</summary>
-<p><div class="table-of-contents"><ul><li><a href="#what-is-the-most-fun-programming-language%3F">What is the most fun programming language?</a><ul><li><a href="#what-is-a-fun-programming-language%3F">What is a fun programming language?</a><li><a href="#how-to-have-fun-with-python">How to have fun with Python</a></ul></ul></div><p></p>
+<p><div class="table-of-contents"><ul><li><a href="#accessibility-is-a-problem-on-the-web">Accessibility is a problem on the web</a><li><a href="#enter-dsls">Enter DSLs</a><li><a href="#my-attempt-to-make-diagramming-more-accessible">My attempt to make diagramming more accessible</a><ul><li><a href="#declaring-aws-resources">Declaring AWS resources</a><li><a href="#get-them-to-either-point-to-things%2C-or-contain-things.">Get them to either point to things, or contain things.</a><li><a href="#precedence">Precedence</a><li><a href="#ideas-for-the-future">Ideas for the future</a></ul></ul></div><p></p>
 </details>
-<h1 id="what-is-the-most-fun-programming-language%3F"tabindex="-1">What is the most fun programming language?</h1>
-<p>I pose this question because I seldom hear the answer. We always talk about the best programming language to get hired or what is the best programming language to do X (see any programming conversation.)</p>
-<p>Let me be clear here: I am not saying that Python is the the best language. The real takeaway from this article is for you think about what is the most fun programming language for you.</p>
-<h2 id="what-is-a-fun-programming-language%3F"tabindex="-1">What is a fun programming language?</h2>
-<p>My interpretation is that fun means it gives you that feeling of joy when you use it. Theres a sort of artistic and creative joy you should be able to derive from it. That means it’s effortless and frictionless to go from your vision to some working form of your idea.</p>
-<p>In fact, Python is stupidly simple - you can just run ‘’‘python <a href="http://main.py">main.py</a>’‘’ and get your program. There is no need to create “class Main”, “main = do” or a compilation step. It’s a dynamic language and comes with a lot of batteries included. You can do a lot with just the standard library to get anything up and running.</p>
-<p>Python is the equivalent of that really chill friend who’s always down to do whatever idea you got. You’ve got to try really hard to piss it off. Cause it’s just such a chill language, it’s a lot of fun because you can just get started and do whatever you want.</p>
-<p>Python’s package manager is an absolute beast when it comes to moving fast. Need an API up to test something? Spin up Flask. Need to do some ML? Go get Tensorflow.</p>
-<h2 id="how-to-have-fun-with-python"tabindex="-1">How to have fun with Python</h2>
-<p>Simple, just think of an idea and do it. It doesn’t have to be amazing or the next Google. Just go out and there and try it, without restraints.</p>
+<h1 id="accessibility-is-a-problem-on-the-web"tabindex="-1">Accessibility is a problem on the web</h1>
+<p>If I had to define a metric for app accessibility, I’d say number of dynamic movements an user has to make to get a desired result.</p>
+<p>Let’s take LucidChart for example. It’s a great tool for diagramming but it’s not accessible. It’s not accessible because you are constantly moving the mouse up and down to get the right shape, the right line, the right text.</p>
+<p>I am not saying that LucidChart is a bad tool. It’s a great tool. Now, I don’t have a disability but I do have a pretty bad shoulder that gets really tired after a while. I can’t imagine how hard it is for someone who has a disability to use LucidChart.</p>
+<h1 id="enter-dsls"tabindex="-1">Enter DSLs</h1>
+<p>I think DSLs can be a solution to the accessibility. They are minimal, they are easy to use and they are accessible as you can use them without a mouse. Just type it out, run it and you are done.</p>
+<h1 id="my-attempt-to-make-diagramming-more-accessible"tabindex="-1">My attempt to make diagramming more accessible</h1>
+<p>Cloudian is a minimal DSL to generate AWS Diagrams.</p>
+<p>It has two rules:
+You can:</p>
+<ol>
+<li>Declare AWS resources</li>
+<li>Get them to either point to things, or contain things.</li>
+</ol>
+<h2 id="declaring-aws-resources"tabindex="-1">Declaring AWS resources</h2>
+<pre class="hljs"><code>    x::Resource
+</code></pre>
+<p>This declares a resource for the diagram of a certain type of AWS resource.</p>
+<p>Example:</p>
+<pre class="hljs"><code>    dynamodb::dynamodb
+</code></pre>
+<h2 id="get-them-to-either-point-to-things%2C-or-contain-things."tabindex="-1">Get them to either point to things, or contain things.</h2>
+<pre class="hljs"><code>    x =&gt; [A]
+</code></pre>
+<p>This declares relationship (goes to) for the resource to another resource Resources which are marked as “groups” mean that everything inside that [A] will go inside that resource. This is essentially how you create groups and subgroups. You can use this to create things like subnets and VPCs.</p>
+<p>Example:</p>
+<pre class="hljs"><code>    dynamodb =&gt; [cognito]
+</code></pre>
+<p>Note: you have to have a list there</p>
+<p>It’s even got a little bit of sugar too:</p>
+<pre class="hljs"><code>    x::Resource =&gt; [A]
+</code></pre>
+<p>This is just shorthand for create a resource and getting it to point somewhere / create a group.</p>
+<pre class="hljs"><code>    region1::subnet =&gt; [amplify, cognito, storage]
+</code></pre>
+<h2 id="precedence"tabindex="-1">Precedence</h2>
+<p>Items at the top of the file have a higher precedence than below. So if you want to have subnets in a region, you got to have them like:</p>
+<pre class="hljs"><code>    region1::subnet =&gt; [subnet-a]
+    subnet-a::subnet =&gt; [s3]
+</code></pre>
+<p>The highest precedence is global, which you can access by not putting a resource in any group</p>
+<p><a href="https://twitter.com/bhurghundii/status/1716963078305100121">Here is a Tweet I made with an example of a rendering</a></p>
+<h2 id="ideas-for-the-future"tabindex="-1">Ideas for the future</h2>
+<ul>
+<li>Cloudian web-app so you can write using an online editor and generate diagrams: <a href="https://github.com/bhurghundii/cloudianlang-app">https://github.com/bhurghundii/cloudianlang-app</a></li>
+<li>More assets! I want to add more assets to the language so you can create more complex diagrams, but that’s a lot of manual work so it’s going to take a while.</li>
+</ul>
 
       </section>
       <section id="article-navigation">
@@ -59,8 +96,8 @@
             <a href="/article/6.html">
               <div class="article-navigation-arrow article-navigation-next">＜</div>
               <div class="article-navigation-content article-navigation-next">
-                <p class="article-navigation-title">The Death of Explanatory Models</p>
-                <p class="article-navigation-subtitle">The biggest problem with AI is how its getting started</p>
+                <p class="article-navigation-title">Too Many Options, Not Enough Time</p>
+                <p class="article-navigation-subtitle">How to use Pick One At Random</p>
               </div>
             </a>
           </div>
@@ -70,8 +107,8 @@
             <a href="/article/4.html">
               <div class="article-navigation-arrow article-navigation-prev">＞</div>
               <div class="article-navigation-content article-navigation-prev">
-                <p class="article-navigation-title">Building things as a way out of malaise</p>
-                <p class="article-navigation-subtitle">Wake up honey, a new coping mechanism has  dropped</p>
+                <p class="article-navigation-title">Introducing the /aiok.txt endpoint</p>
+                <p class="article-navigation-subtitle">Developers, developers, developers</p>
               </div>
             </a>
           </div>
