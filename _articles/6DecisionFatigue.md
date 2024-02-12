@@ -14,7 +14,7 @@ Making decisions is hard. It's even harder when you have to make a lot of them. 
 
 # Pick One At Random
 
-![homepage](../images/homepage.png)
+![homepage](/images/homepage.png)
 
 I built www.pickoneatrandom.com exactly for this purpose. I hope it helps you as much as it has helped me to get into the groove. 
 

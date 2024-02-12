@@ -12,19 +12,19 @@ However, I went all in on AWS because I figured "Hey, I use this a lot at work, 
 
 Meet: www.breadcrumb.live
 
-![HomePage](../images/breadcrumb.png)
+![HomePage](/images/breadcrumb.png)
 
 Originally, I built this app to help me sample different media from ambient noises, to images to random thoughts. A scrapbook of sorts that I could look back on and see what I was thinking about at the time.
 
 But mostly because Google Photos doesn't let you organize images by Tags
 
-![funny](../images/funnygoogle.png)
+![funny](/images/funnygoogle.png)
 
 So to the 3 people who wanted it, here it is!
 
 # Breadcrumb is simple but effective 
 
-![Architecutre](../images/breadcrumbarch.png)
+![Architecutre](/images/breadcrumbarch.png)
 
 Nothing fancy but it's quite nice that the frontend and the backend are decoupled. The backend is a simple API Gateway and Lambda function that stores the data in DynamoDB and S3. 
 
