@@ -1,5 +1,5 @@
 ---
-id: 1
+id: 2
 title: "An Argument To Write Your Own Boilerplate"
 subtitle: "Wake up honey, a new coping mechanism has dropped"
 date: "2023-08-27"
