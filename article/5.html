@@ -1,24 +1,24 @@
-<!doctypehtml>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Diagramming Tools and the Accessibility problem</title>
 
-  <meta name="viewport"content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="shortcut icon"href="../assets/favicon.ico"type="image/x-icon">
-  <link rel="preload"href="../styles/article.css"as="style">
-  <link rel="stylesheet"href="../styles/article.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="../styles/article.css" as="style">
+  <link rel="stylesheet" href="../styles/article.css">
 </head>
 <body>
-  <header id="top-container"role="navigation">
+  <header id="top-container" role="navigation">
     <nav>
-  <a class="logo-link"href="/">
+  <a class="logo-link" href="/">
     <h1>bhurghundii</h1>
   </a>
   <small>
-    <a id="articles"class="info-link"href="/articles.html">articles</a>
+    <a id="articles" class="info-link" href="/articles.html">articles</a>
   </small>
 </nav>
 
@@ -39,15 +39,15 @@
 
       <section id="article-content-container">
         <details><summary>Table of Contents</summary>
-<p><div class="table-of-contents"><ul><li><a href="#accessibility-is-a-problem-on-the-web">Accessibility is a problem on the web</a><li><a href="#enter-dsls">Enter DSLs</a><li><a href="#my-attempt-to-make-diagramming-more-accessible">My attempt to make diagramming more accessible</a><ul><li><a href="#declaring-aws-resources">Declaring AWS resources</a><li><a href="#get-them-to-either-point-to-things%2C-or-contain-things.">Get them to either point to things, or contain things.</a><li><a href="#precedence">Precedence</a><li><a href="#ideas-for-the-future">Ideas for the future</a></ul></ul></div><p></p>
+<p><div class="table-of-contents"><ul><li><a href="#accessibility-is-a-problem-on-the-web">Accessibility is a problem on the web</a></li><li><a href="#enter-dsls">Enter DSLs</a></li><li><a href="#my-attempt-to-make-diagramming-more-accessible">My attempt to make diagramming more accessible</a><ul><li><a href="#declaring-aws-resources">Declaring AWS resources</a></li><li><a href="#get-them-to-either-point-to-things%2C-or-contain-things.">Get them to either point to things, or contain things.</a></li><li><a href="#precedence">Precedence</a></li><li><a href="#ideas-for-the-future">Ideas for the future</a></li></ul></li></ul></div></p>
 </details>
-<h1 id="accessibility-is-a-problem-on-the-web"tabindex="-1">Accessibility is a problem on the web</h1>
+<h1 id="accessibility-is-a-problem-on-the-web" tabindex="-1">Accessibility is a problem on the web</h1>
 <p>If I had to define a metric for app accessibility, I’d say number of dynamic movements an user has to make to get a desired result.</p>
 <p>Let’s take LucidChart for example. It’s a great tool for diagramming but it’s not accessible. It’s not accessible because you are constantly moving the mouse up and down to get the right shape, the right line, the right text.</p>
 <p>I am not saying that LucidChart is a bad tool. It’s a great tool. Now, I don’t have a disability but I do have a pretty bad shoulder that gets really tired after a while. I can’t imagine how hard it is for someone who has a disability to use LucidChart.</p>
-<h1 id="enter-dsls"tabindex="-1">Enter DSLs</h1>
+<h1 id="enter-dsls" tabindex="-1">Enter DSLs</h1>
 <p>I think DSLs can be a solution to the accessibility. They are minimal, they are easy to use and they are accessible as you can use them without a mouse. Just type it out, run it and you are done.</p>
-<h1 id="my-attempt-to-make-diagramming-more-accessible"tabindex="-1">My attempt to make diagramming more accessible</h1>
+<h1 id="my-attempt-to-make-diagramming-more-accessible" tabindex="-1">My attempt to make diagramming more accessible</h1>
 <p>Cloudian is a minimal DSL to generate AWS Diagrams.</p>
 <p>It has two rules:
 You can:</p>
@@ -55,14 +55,14 @@ You can:</p>
 <li>Declare AWS resources</li>
 <li>Get them to either point to things, or contain things.</li>
 </ol>
-<h2 id="declaring-aws-resources"tabindex="-1">Declaring AWS resources</h2>
+<h2 id="declaring-aws-resources" tabindex="-1">Declaring AWS resources</h2>
 <pre class="hljs"><code>    x::Resource
 </code></pre>
 <p>This declares a resource for the diagram of a certain type of AWS resource.</p>
 <p>Example:</p>
 <pre class="hljs"><code>    dynamodb::dynamodb
 </code></pre>
-<h2 id="get-them-to-either-point-to-things%2C-or-contain-things."tabindex="-1">Get them to either point to things, or contain things.</h2>
+<h2 id="get-them-to-either-point-to-things%2C-or-contain-things." tabindex="-1">Get them to either point to things, or contain things.</h2>
 <pre class="hljs"><code>    x =&gt; [A]
 </code></pre>
 <p>This declares relationship (goes to) for the resource to another resource Resources which are marked as “groups” mean that everything inside that [A] will go inside that resource. This is essentially how you create groups and subgroups. You can use this to create things like subnets and VPCs.</p>
@@ -76,14 +76,14 @@ You can:</p>
 <p>This is just shorthand for create a resource and getting it to point somewhere / create a group.</p>
 <pre class="hljs"><code>    region1::subnet =&gt; [amplify, cognito, storage]
 </code></pre>
-<h2 id="precedence"tabindex="-1">Precedence</h2>
+<h2 id="precedence" tabindex="-1">Precedence</h2>
 <p>Items at the top of the file have a higher precedence than below. So if you want to have subnets in a region, you got to have them like:</p>
 <pre class="hljs"><code>    region1::subnet =&gt; [subnet-a]
     subnet-a::subnet =&gt; [s3]
 </code></pre>
 <p>The highest precedence is global, which you can access by not putting a resource in any group</p>
 <p><a href="https://twitter.com/bhurghundii/status/1716963078305100121">Here is a Tweet I made with an example of a rendering</a></p>
-<h2 id="ideas-for-the-future"tabindex="-1">Ideas for the future</h2>
+<h2 id="ideas-for-the-future" tabindex="-1">Ideas for the future</h2>
 <ul>
 <li>Cloudian web-app so you can write using an online editor and generate diagrams: <a href="https://github.com/bhurghundii/cloudianlang-app">https://github.com/bhurghundii/cloudianlang-app</a></li>
 <li>More assets! I want to add more assets to the language so you can create more complex diagrams, but that’s a lot of manual work so it’s going to take a while.</li>
@@ -116,5 +116,5 @@ You can:</p>
       </section>
     </article>
   </main>
-
-
+</body>
+</html>
