@@ -1,24 +1,24 @@
-<!doctypehtml>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>An Argument To Write Your Own Boilerplate</title>
 
-  <meta name="viewport"content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="shortcut icon"href="../assets/favicon.ico"type="image/x-icon">
-  <link rel="preload"href="../styles/article.css"as="style">
-  <link rel="stylesheet"href="../styles/article.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="../styles/article.css" as="style">
+  <link rel="stylesheet" href="../styles/article.css">
 </head>
 <body>
-  <header id="top-container"role="navigation">
+  <header id="top-container" role="navigation">
     <nav>
-  <a class="logo-link"href="/">
+  <a class="logo-link" href="/">
     <h1>bhurghundii</h1>
   </a>
   <small>
-    <a id="articles"class="info-link"href="/articles.html">articles</a>
+    <a id="articles" class="info-link" href="/articles.html">articles</a>
   </small>
 </nav>
 
@@ -39,22 +39,22 @@
 
       <section id="article-content-container">
         <details><summary>Table of Contents</summary>
-<p><div class="table-of-contents"><ul><li><a href="#breadcrumb-is-simple-but-effective">Breadcrumb is simple but effective</a><li><a href="#a-lot-of-things%2C-but-very-quick">A lot of things, but very quick</a></ul></div><p></p>
+<p><div class="table-of-contents"><ul><li><a href="#breadcrumb-is-simple-but-effective">Breadcrumb is simple but effective</a></li><li><a href="#a-lot-of-things%2C-but-very-quick">A lot of things, but very quick</a></li></ul></div></p>
 </details>
 <p>I used to be a Google FireBase kind of guy when it came to writing apps on my own time. I guess I got fond memories of focussing on what I was building because of the simplicity of the platform. I didn’t have to worry about a lot of nonsense and I could just get to work.</p>
 <p>However, I went all in on AWS because I figured “Hey, I use this a lot at work, I should probably get good at it”.</p>
 <p>Meet: www.breadcrumb.live</p>
-<p><img src="/images/breadcrumb.png"alt="HomePage"loading="lazy"decoding="async"width="1700"height="904"></p>
+<p><img src="/images/breadcrumb.png" alt="HomePage" loading="lazy" decoding="async" width="1700" height="904"></p>
 <p>Originally, I built this app to help me sample different media from ambient noises, to images to random thoughts. A scrapbook of sorts that I could look back on and see what I was thinking about at the time.</p>
 <p>But mostly because Google Photos doesn’t let you organize images by Tags</p>
-<p><img src="/images/funnygoogle.png"alt="funny"loading="lazy"decoding="async"width="1708"height="1008"></p>
+<p><img src="/images/funnygoogle.png" alt="funny" loading="lazy" decoding="async" width="1708" height="1008"></p>
 <p>So to the 3 people who wanted it, here it is!</p>
-<h1 id="breadcrumb-is-simple-but-effective"tabindex="-1">Breadcrumb is simple but effective</h1>
-<p><img src="/images/breadcrumbarch.png"alt="Architecutre"loading="lazy"decoding="async"width="1640"height="2360"></p>
+<h1 id="breadcrumb-is-simple-but-effective" tabindex="-1">Breadcrumb is simple but effective</h1>
+<p><img src="/images/breadcrumbarch.png" alt="Architecutre" loading="lazy" decoding="async" width="1640" height="2360"></p>
 <p>Nothing fancy but it’s quite nice that the frontend and the backend are decoupled. The backend is a simple API Gateway and Lambda function that stores the data in DynamoDB and S3.</p>
 <p>The frontend is a simple React app that talks to the backend which is stored in an S3 bucket (managed by Amplify.)</p>
 <p>Sign ups are done using Cognito and the whole thing is distributed by CloudFront.</p>
-<h1 id="a-lot-of-things%2C-but-very-quick"tabindex="-1">A lot of things, but very quick</h1>
+<h1 id="a-lot-of-things%2C-but-very-quick" tabindex="-1">A lot of things, but very quick</h1>
 <p>I was surprised at how quickly I was able to get this up and running. Most importantly, I am able to see this and see where I can extend it as well. I really like how things have panned out. So much so that I am working on releasing the code as open source in the form of a boiler plate.</p>
 <p>UPDATE: the front end boilerplate is done: <a href="https://github.com/bhurghundii/aws-vite-react-boilerplate">https://github.com/bhurghundii/aws-vite-react-boilerplate</a></p>
 
@@ -85,5 +85,5 @@
       </section>
     </article>
   </main>
-
-
+</body>
+</html>
