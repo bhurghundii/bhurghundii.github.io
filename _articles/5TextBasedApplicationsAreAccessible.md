@@ -72,8 +72,6 @@ Items at the top of the file have a higher precedence than below. So if you want
 
 The highest precedence is global, which you can access by not putting a resource in any group
 
-[Here is a Tweet I made with an example of a rendering](https://twitter.com/bhurghundii/status/1716963078305100121)
-
 ## Ideas for the future
 
 - Cloudian web-app so you can write using an online editor and generate diagrams: https://github.com/bhurghundii/cloudianlang-app
