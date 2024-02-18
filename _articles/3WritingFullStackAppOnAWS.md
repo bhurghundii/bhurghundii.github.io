@@ -1,7 +1,7 @@
 ---
 id: 3
-title: "An Argument To Write Your Own Boilerplate"
-subtitle: "Wake up honey, a new coping mechanism has dropped"
+title: "Writing a full stack app on AWS"
+subtitle: "With an a dditional boilerplate template too!"
 date: "2023-08-27"
 tags: "release"
 ---

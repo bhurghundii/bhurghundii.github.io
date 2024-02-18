@@ -27,11 +27,3 @@ Just add a file to the root of your website called aiok.txt. In this file, you c
 2. What are the main flows of your website
 3. What are the main buttons and links on your website
 4. What are the main content areas on your website
-
-Any many more 
-
-# An example 
-
-I have created a /aiok.txt file for my [website](www.pickoneatrandom.com/aiok.txt) to allow LLMs to better interact with it. 
-
-If you feel like this is a good idea, please share it with your friends and colleagues. I am always on the hunt for feedback and I would love to hear what you think about this idea. 
