@@ -17,23 +17,23 @@ This can be overwhelming sometimes!
 
 I built www.pickoneatrandom.com for making decisions on things I had to make often but don't really care about. Things like "What food are we going to order today?" or "What type of coding problem are we going to solve?"
 
-The way it works is simple: you add a deck, add items to the deck and then you get a random item from the deck, once a day. You can't go back and "roll the dice" for a different item.
+The way it works is simple: you add a list, add items to the list and then you get a random item from the list, once a day. You can't go back and "roll the dice" for a different item.
 
 ## How it works
 
-You always start with no decks. You can create a deck by:
+You always start with no lists. You can create a list by:
 
-1. Hitting "Add a new deck" and enter a name for the deck
+1. Hitting "Add a new list" and enter a name for the list
 2. Hitting "Add a new item" and enter a name for the item
 3. Add as many items as you want
 4. Go back to the main screen and voila! You get one thing random,
 
 ## I am lazy - give me cards to start with
 
-There are pre-defined decks that you can use if you are feeling lazy. I have a few that I use for my own personal use and I hope you find them useful too.
+There are pre-defined lists that you can use if you are feeling lazy. I have a few that I use for my own personal use and I hope you find them useful too.
 
 # On data storage and privacy
 
-There is no back-end so no data syncing: the app stores the data locally on your machine. I don't have any access to your decks.
+There is no back-end so no data syncing: the app stores the data locally on your machine. I don't have any access to your lists.
 
 Regarding privacy, I use Google Analytics to track usage. I just go after traffic data because I need to know how many people are using the app so I don't get screwed by AWS bills.
