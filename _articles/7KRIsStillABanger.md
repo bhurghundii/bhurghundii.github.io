@@ -8,6 +8,8 @@ tags: "book review, programming, C"
 
 K&R is a book about C programming written by the dudes who actually wrote the language. It's a masterpiece in concise writing, capable of going over the entire language in a few hundred pages.
 
+To prove I actually did read the book, here are the exercises: https://github.com/bhurghundii/k-r-c/tree/main from the book. I did them awfully but hey, at least I did them.
+
 # The Good
 
 K&R's strength is the exercises. There is enough meat in the pages to explain how to write C code and understand what is going on under the hood but K&R knows that no matter how many pages you write, it can't explain the complexity that comes with writing real C code. C is a language which is best written with the awareness of the underlying hardware and K&R damn well makes sure you get that. 
