@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 
 import ArticlePublisher from '../services/ArticlePublisher';
-import WorkPublisher from '../services/WorkPublisher';
 import PagePublisher from '../services/PagePublisher';
 
 const args: string[] = process.argv.slice(2);
@@ -27,18 +26,6 @@ switch (target) {
   case 'article':
     console.log('\x1b[36m%s\x1b[0m', 'Run ArticlePublisher...');
     publishArticle(mode);
-    break;
-
-  case 'work':
-    console.log('\x1b[36m%s\x1b[0m', 'Run WorkPublisher...');
-
-    if (!mode || mode === 'all') {
-      console.log('Publish all works: WorkPublisher.publishAllWorks()');
-      WorkPublisher.publishAllWorks();
-      console.log('\x1b[36m%s\x1b[0m', 'Done!');
-    } else {
-      console.log('\x1b[31m%s\x1b[0m', `ERR! Unknown mode '${mode}'.`);
-    }
     break;
 
   case 'page':
