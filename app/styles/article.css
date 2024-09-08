@@ -211,7 +211,6 @@
 
 #article-content-container details[open=""] > summary {
   background-color: black;
-  color: white;
 }
 
 #article-content-container summary {
