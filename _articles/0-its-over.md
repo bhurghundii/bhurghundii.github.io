@@ -34,9 +34,7 @@ Recruiter (off stage): It says "Proficient in React, TypeScript, Java, Elementar
 Yeah, so? You never Stomped at the Savoy.
 
 # "Fair enough - point taken. But you ain't having it back! Try and catch me!" (Exits through the left)
-It's prom again. It's always the biggest night of my life. 
-
-The love of my life comes up to me:
+It's prom again. It's always the biggest night of my life. I walk up to the love of my life (for tonight (maybe the DJ got us falling in love again?))
 
 "Wanna do the hokey pokey?" We turn ourselves around / and that's what it's all about - one more time now! 
 
