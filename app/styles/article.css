@@ -171,6 +171,7 @@
 #article-content-container code,
 #article-content-container code span {
   font-family: 'Consolas', 'Monaco', 'Ubuntu Mono', 'Andale Mono', monospace;
+  background-color: #272A36;
 }
 
 #article-content-container p code,
@@ -179,7 +180,6 @@
 }
 
 #article-content-container blockquote {
-  border-left: 3px #DFDFDF solid;
   padding-left: 15px;
 }
 
