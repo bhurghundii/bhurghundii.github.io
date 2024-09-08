@@ -28,7 +28,7 @@ And you turn yourself around.
 
 And that's what it's all about!
 
-Recruiter: It says "Proficient in React, TypeScript, Java, Elementary Grade Dance, Washing Dogs - Feel free to adjust or expand on any of these points based on your experience!" - Oh golly! We need him! What can't he do?
+Recruiter (off stage): It says "Proficient in React, TypeScript, Java, Elementary Grade Dance, Washing Dogs - Feel free to adjust or expand on any of these points based on your experience!" - Oh golly! We need him! What can't he do?
 
 # Old veteran hoofer: Bet you never did the "Kenosha," kid!
 Yeah, so? You never Stomped at the Savoy.
@@ -41,5 +41,6 @@ The love of my life comes up to me:
 "Wanna do the hokey pokey?" We turn ourselves around / and that's what it's all about - one more time now! 
 
 [1] A side effect of hybrid work is you get the downsides of commuting in rush hour AND you get to stay at home and work while you are sick. You can take sick leave but you are in that funny purgatory of being fucked enough to not be able to do anything but rot in your bed while simultaneously not being fucked enough to be knocked out for a few days.
+
 [2] Apparently here in the UK, it's right arm in, right arm out. That makes no sense - you look funny doing it
 
