@@ -1,6 +1,6 @@
 ---
-title: "Lorem Ipsum"
-subtitle: "Sed sit amet arcu a diam tincidunt porta"
+title: "Pick One At Random"
+subtitle: "Defeating Decision Fatigue with Randomness"
 thumbnail: "/images/800x600.png"
 ---
 
