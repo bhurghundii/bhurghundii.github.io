@@ -1,5 +1,5 @@
 ---
-id: 3
+id: 4
 title: "Post Mortem on BladeCache"
 subtitle: "Explorations into AOP and bringing my beloved @Cacheable to Dagger"
 date: "2025.02.07"
