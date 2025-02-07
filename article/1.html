@@ -1,0 +1,116 @@
+<!doctypehtml>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to write your own audio transcription to ChatGPT without 4o</title>
+
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+
+  <link rel="shortcut icon"href="../assets/favicon.ico"type="image/x-icon">
+  <link rel="preload"href="../styles/article.css"as="style">
+  <link rel="stylesheet"href="../styles/article.css">
+</head>
+<body>
+  <header id="top-container"role="navigation">
+    <nav>
+  <a class="logo-link"href="/">
+    <h1>Bhurghundii</h1>
+  </a>
+  <small>
+    <a id="about"class="info-link"href="/about.html">About</a> /
+    <a id="articles"class="info-link"href="/articles.html">Posts</a>
+  </small>
+</nav>
+
+  </header>
+  <main id="main-container">
+    <article id="article-container">
+      <h1 id="article-title">
+        How to write your own audio transcription to ChatGPT without 4o
+      </h1>
+      
+        <h2 id="article-subtitle">
+          Please stop releasing new models OpenAI
+        </h2>
+      
+      <time id="article-date">
+        2019.12.08
+      </time>
+      <section id="article-content-container">
+        <details><summary>Table of Contents</summary>
+<p><div class="table-of-contents"><ul><li><a href="#who-this-article-is-for">Who this article is for</a><li><a href="#the-problem-with-iphone">The Problem with iPhone</a><li><a href="#the-solution">The Solution</a></ul></div><p></p>
+</details>
+<h1 id="who-this-article-is-for"tabindex="-1">Who this article is for</h1>
+<ul>
+<li>You are building a web app with voice chat targeting iPhones</li>
+<li>You are not using audio capabilities with 4o and just the regular ChatGPT 4 Turbo (cause you are cheap x)</li>
+<li>You have to send not massive amounts of data</li>
+</ul>
+<p>I had a problem with ExamSpeak when it was known as Flooency back in early 2024. ChatGPT 4 had just come out and I had a hard requirement of letting people use their microphones to speak to the model.</p>
+<p>This seemed simple enough: just send the audio data to Cloud Speech To Text by Google. The only problem was that it didn’t work for iPhones.</p>
+<h1 id="the-problem-with-iphone"tabindex="-1">The Problem with iPhone</h1>
+<p>The iPhone browser environment uses the audio/mp4 for recording audio data. The problem is that the API we needed does not support that (<a href="https://cloud.google.com/speech-to-text/docs/encoding">https://cloud.google.com/speech-to-text/docs/encoding</a>)</p>
+<p>So, you got a React web app on an iPhone. What do you do? You check StackOverflow, of course…</p>
+<p>Except I couldn’t find anything concrete and useful. Nah, I had to build my own thing.</p>
+<h1 id="the-solution"tabindex="-1">The Solution</h1>
+<p>Given you need to send audio data to a backend anyways to get ChatGPT to respond, you might as well use a backend function to convert the audio data to the right format.</p>
+<p>First, you use Base64 to encode the audio data.</p>
+<p>Then you use the Hail Mary of audio conversion tools, FFmpeg, to convert the audio data to the right format.</p>
+<pre class="hljs"><code><span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">convertBase64MP4ToFlac</span>(<span class="hljs-params">base64Audio: string</span>)
+: <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">Buffer</span>&gt; {
+  <span class="hljs-keyword">const</span> audioBuffer = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-title function_">decode</span>(base64Audio));
+  <span class="hljs-keyword">const</span> inputStream = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Readable</span>();
+  inputStream.<span class="hljs-title function_">push</span>(audioBuffer);
+  inputStream.<span class="hljs-title function_">push</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">const</span> outputStream = <span class="hljs-keyword">new</span> <span class="hljs-title class_">PassThrough</span>();
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">chunks</span>: <span class="hljs-title class_">Buffer</span>[] = [];
+
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-title function_">ffmpeg</span>(inputStream)
+      .<span class="hljs-title function_">toFormat</span>(<span class="hljs-string">&quot;flac&quot;</span>)
+      .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;error&quot;</span>, <span class="hljs-function">(<span class="hljs-params">err: any</span>) =&gt;</span> <span class="hljs-title function_">reject</span>(err))
+      .<span class="hljs-title function_">pipe</span>(outputStream)
+      .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;data&quot;</span>, <span class="hljs-function">(<span class="hljs-params">chunk: Buffer</span>) =&gt;</span> chunks.<span class="hljs-title function_">push</span>(chunk))
+      .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;end&quot;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">resolve</span>(<span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">concat</span>(chunks)));
+  });
+}
+</code></pre>
+<p>Given we were transcribing up to a minute of audio, it wasn’t a whole lot of data to send to the back-end and it coped well.</p>
+<p>I mean, give it a shot on your iPhone and see if the audio works: <a href="https://examspeak.co.uk/assignments/7377">https://examspeak.co.uk/assignments/7377</a></p>
+
+      </section>
+      <section id="article-navigation">
+        
+          <div class="article-navigation-item article-navigation-next">
+            <a href="/article/3.html">
+              <div class="article-navigation-arrow article-navigation-next">＜</div>
+              <div class="article-navigation-content article-navigation-next">
+                <p class="article-navigation-title">Moby Dick - As Told By Captain Ahab</p>
+                <p class="article-navigation-subtitle">Answering the critique that the book is like, 1% of Captain Ahab fighting the whale</p>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="article-navigation-item article-navigation-prev">
+            <a href="/article/4.html">
+              <div class="article-navigation-arrow article-navigation-prev">＞</div>
+              <div class="article-navigation-content article-navigation-prev">
+                <p class="article-navigation-title">Post Mortem on BladeCache</p>
+                <p class="article-navigation-subtitle">Explorations into AOP and bringing my beloved @Cacheable to Dagger</p>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      <section id="article-list-button-container">
+        <a href="/articles.html">
+          <div id="article-list-button">📚</div>
+        </a>
+      </section>
+    </article>
+  </main>
+
+

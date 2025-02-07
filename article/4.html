@@ -1,0 +1,91 @@
+<!doctypehtml>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Mortem on BladeCache</title>
+
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+
+  <link rel="shortcut icon"href="../assets/favicon.ico"type="image/x-icon">
+  <link rel="preload"href="../styles/article.css"as="style">
+  <link rel="stylesheet"href="../styles/article.css">
+</head>
+<body>
+  <header id="top-container"role="navigation">
+    <nav>
+  <a class="logo-link"href="/">
+    <h1>Bhurghundii</h1>
+  </a>
+  <small>
+    <a id="about"class="info-link"href="/about.html">About</a> /
+    <a id="articles"class="info-link"href="/articles.html">Posts</a>
+  </small>
+</nav>
+
+  </header>
+  <main id="main-container">
+    <article id="article-container">
+      <h1 id="article-title">
+        Post Mortem on BladeCache
+      </h1>
+      
+        <h2 id="article-subtitle">
+          Explorations into AOP and bringing my beloved @Cacheable to Dagger
+        </h2>
+      
+      <time id="article-date">
+        2025.02.07
+      </time>
+      <section id="article-content-container">
+        <details><summary>Table of Contents</summary>
+<p><div class="table-of-contents"><ul><li><a href="#a-real-appreciation-for-spring-aop-and-spring-cache">A real appreciation for Spring AOP and Spring Cache</a><li><a href="#how-far-did-i-get%3F">How far did I get?</a></ul></div><p></p>
+</details>
+<p>I love the Spring annotations. My favorite by far is @Cacheable. My goal was to see if I could bring the functionality to Dagger.</p>
+<p>A week in, and my experiments have shown me this is probably not a great idea. But let’s talk about the positives.</p>
+<h1 id="a-real-appreciation-for-spring-aop-and-spring-cache"tabindex="-1">A real appreciation for Spring AOP and Spring Cache</h1>
+<p>To make this project work, I would need to get Annotations to work without Spring AOP. It’s actually really tricky to do that (even <a href="https://www.baeldung.com/java-annotation-processing-builder">Lombok had to has to do some trickery</a>)</p>
+<p>The good news I learned how to write my own custom annotations as a part of figuring out how this all works. So in the future, look out for any attempts (and please stop me cause <a href="https://en.wikipedia.org/wiki/Information_hiding">AOP is actually a bad idea</a>)</p>
+<h1 id="how-far-did-i-get%3F"tabindex="-1">How far did I get?</h1>
+<p>After doing research into AOP and studying a few implementations, I made a start using just AspectJ and other plugins.</p>
+<p>I wrote a Hello World style Annotation to see if I could get it to work. The real struggle was actually getting the Java compiler to pick it up and after some Googling, it became very obvious the set up requires whoever is using my library to run certain arguments to get it running, which would kind of be really annoying for them. Figuring that this was going to be bigger than an afternoon for something that could literally be replaced by this:</p>
+<pre class="hljs"><code>     cache.get(key, k -&gt; {
+            <span class="hljs-comment">// cache miss - do something </span>
+        });
+</code></pre>
+<p>seemed a bit overkill. And so, here lies my afternoon research project.</p>
+
+      </section>
+      <section id="article-navigation">
+        
+          <div class="article-navigation-item article-navigation-next">
+            <a href="/article/1.html">
+              <div class="article-navigation-arrow article-navigation-next">＜</div>
+              <div class="article-navigation-content article-navigation-next">
+                <p class="article-navigation-title">How to write your own audio transcription to ChatGPT without 4o</p>
+                <p class="article-navigation-subtitle">Please stop releasing new models OpenAI</p>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="article-navigation-item article-navigation-prev">
+            <a href="/article/0.html">
+              <div class="article-navigation-arrow article-navigation-prev">＞</div>
+              <div class="article-navigation-content article-navigation-prev">
+                <p class="article-navigation-title">Welcome to Bhurghundii</p>
+                <p class="article-navigation-subtitle">What this blog is about</p>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      <section id="article-list-button-container">
+        <a href="/articles.html">
+          <div id="article-list-button">📚</div>
+        </a>
+      </section>
+    </article>
+  </main>
+
+
