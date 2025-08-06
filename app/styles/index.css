@@ -1,2 +1,27 @@
 @import 'init.css';
 
+.columns {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+#header a {
+  margin-right: 12px;
+}
+
+#header a:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
