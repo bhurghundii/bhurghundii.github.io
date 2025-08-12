@@ -1,1 +1,0 @@
-# bhurghundii.github.io
