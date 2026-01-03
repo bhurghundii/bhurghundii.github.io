@@ -2,6 +2,11 @@
 @import 'dracula.css';
 @import 'katex.css';
 
+body {
+  background-color: #e1c6d4;
+  font-family: Arial, sans-serif;
+}
+
 #main-container {
   max-width: 800px;
   margin: 90px auto auto;

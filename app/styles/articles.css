@@ -1,5 +1,10 @@
 @import 'init.css';
 
+body {
+  background-color: #e1c6d4;
+  font-family: Arial, sans-serif;
+}
+
 #articles-container h1 {
   display: inline;
   font-size: 18px;
