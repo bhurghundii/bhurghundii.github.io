@@ -3,7 +3,7 @@ id: 3
 title: "Odd Travelling Tips That Work"
 subtitle: ""
 date: "2025.12.08"
-tags: "nonsense"
+tags: "yap"
 ---
 
 # Always visit the toilets

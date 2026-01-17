@@ -3,7 +3,6 @@
 DIST="./dist"
 PUBLIC="./app/public"
 PUBLIC_ARTICLE="./app/public/article"
-PUBLIC_WORK="./app/public/work"
 
 CYAN="\033[36m"
 GREEN="\033[32m"
@@ -16,8 +15,6 @@ echo -e "> [-d ${PUBLIC} ] || mkdir ${PUBLIC}"
 [ -d $PUBLIC ] || mkdir $PUBLIC
 echo -e "> [-d ${PUBLIC_ARTICLE} ] || mkdir ${PUBLIC_ARTICLE}"
 [ -d $PUBLIC_ARTICLE ] || mkdir $PUBLIC_ARTICLE
-echo -e "> [-d ${PUBLIC_WORK} ] || mkdir ${PUBLIC_WORK}\n"
-[ -d $PUBLIC_WORK ] || mkdir $PUBLIC_WORK
 
 echo -e "${GREEN}Create ${DIST} directory if it does not exist...${WHITE}"
 echo -e "> [-d ${DIST} ] || mkdir ${DIST}\n"
@@ -28,8 +25,6 @@ echo "> ts-node ./tools/publish.ts page"
 ts-node ./tools/publish.ts page
 echo "> ts-node ./tools/publish.ts article"
 ts-node ./tools/publish.ts article
-echo "> ts-node ./tools/publish.ts work"
-ts-node ./tools/publish.ts work
 
 echo -e "\n${GREEN}Reset distribution directory...${WHITE}"
 echo "> rm -r ${DIST}/*"

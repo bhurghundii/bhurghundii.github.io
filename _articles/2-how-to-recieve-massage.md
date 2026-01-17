@@ -3,7 +3,7 @@ id: 2
 title: "How To Receive A Massage"
 subtitle: "Save thy money with this one easy hack!"
 date: "2025.11.30"
-tags: "nonsense"
+tags: "yap"
 ---
 
 Life is stressful. Stress can cause our bodies and minds to develop tension which we need to deal with if we want to live well and perform at a high level.

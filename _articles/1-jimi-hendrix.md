@@ -3,7 +3,7 @@ id: 1
 title: "Jimi Hendrix, you cannot just start playing without your band"
 subtitle: "The greatest live performance in my opinion"
 date: "2025.10.12"
-tags: "nonsense"
+tags: "yap"
 ---
 
 I have been obsessed with Jimi Hendrix’s rendition of Killing Floor. [Very specifically in this performance.](https://www.youtube.com/watch?v=qHuGoI3kPa4&t=1s)
