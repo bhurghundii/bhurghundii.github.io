@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bhurghundii | Works</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="./styles/works.css" as="style">
+  <link rel="stylesheet" href="./styles/works.css">
+</head>
+<body>
+  <header id="top-container" role="navigation">
+    <%- include(process.cwd() + '/app/templates/navigation'); %>
+  </header>
+  <main id="main-container">
+    <div id="works-filters">
+      <button type="button" class="works-filter active" data-tag="all">All</button>
+      <button type="button" class="works-filter" data-tag="Software">Software</button>
+      <button type="button" class="works-filter" data-tag="Art">Art</button>
+      <button type="button" class="works-filter" data-tag="Open Source">Open Source</button>
+    </div>
+    <section id="works-container">
+      <% works.reverse().map((work) => { %>
+      <a class="works-content" href="./work/<%= work.id %>.html" data-tags="<%= work.tags.join('|') %>">
+        <% if (work.thumbnail) { %>
+          <img src="<%= work.thumbnail %>" />
+        <% } else { %>
+          <div class="works-thumbnail-fallback"><%= work.title.charAt(0) %></div>
+        <% } %>
+        <h1><%= work.title %></h1>
+      </a>
+      <% }) %>
+    </section>
+  </main>
+
+  <%- include(process.cwd() + '/app/templates/footer'); %>
+  <script>
+    var filterButtons = document.querySelectorAll('.works-filter');
+    var cards = document.querySelectorAll('.works-content');
+
+    function applyFilter(tag) {
+      cards.forEach(function (card) {
+        var tags = card.getAttribute('data-tags').split('|');
+        card.style.display = (tag === 'all' || tags.indexOf(tag) !== -1) ? '' : 'none';
+      });
+    }
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        filterButtons.forEach(function (b) { b.classList.remove('active'); });
+        button.classList.add('active');
+        applyFilter(button.getAttribute('data-tag'));
+      });
+    });
+  </script>
+</body>
+</html>

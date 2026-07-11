@@ -4,17 +4,3 @@ body {
   background-color: #e1c6d4;
   font-family: Arial, sans-serif;
 }
-
-#header a {
-  margin-right: 12px;
-}
-
-#header a:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 800px) {
-  .columns {
-    flex-direction: column;
-  }
-}

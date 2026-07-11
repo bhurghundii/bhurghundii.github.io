@@ -1,0 +1,58 @@
+@import 'init.css';
+
+body {
+  background-color: #e1c6d4;
+  font-family: Arial, sans-serif;
+}
+
+#work-container {
+  margin-top: 90px;
+}
+
+#work-title {
+  width: auto;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#work-subtitle {
+  font-size: 20px;
+  word-break: keep-all;
+  font-weight: 400;
+}
+
+#work-tags {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+#work-tags li {
+  float: left;
+  padding-right: 8px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#work-container a {
+  text-decoration: underline;
+}
+
+#work-container a:hover,
+#work-container a:focus {
+  color: white;
+  background-color: black;
+}
+
+#work-container img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+#work-container p {
+  font-size: 16px;
+  line-height: 200%;
+}
