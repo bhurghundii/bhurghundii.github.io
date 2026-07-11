@@ -32,8 +32,8 @@ if [[ $(git status -s) == "" ]]; then
   git commit -m "dist: $DATE"
 
   echo -e "\n${GREEN}Use subtree push to gh-pages branch...${WHITE}"
-  echo -e "${WHITE}> cd git push origin \`git subtree split --prefix ${DIST} master\`:gh-pages --force"
-  git push origin `git subtree split --prefix $DIST master`:gh-pages --force
+  echo -e "${WHITE}> cd git push origin \`git subtree split --prefix ${DIST} master\`:refs/heads/gh-pages --force"
+  git push origin `git subtree split --prefix $DIST master`:refs/heads/gh-pages --force
 
   echo -e "\n${GREEN}Reset the temporary changes...${WHITE}"
   echo -e "${WHITE}> git reset HEAD~"
