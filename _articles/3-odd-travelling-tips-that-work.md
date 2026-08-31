@@ -44,5 +44,3 @@ Pick between Barcelona and Real Madrid. Personally, I pick Real Madrid because a
 Don’t bother even following those teams: just learn the absolute basics. Like how Barcelona has a lot of wonder kids and seem to be on the up (the potential of youth), and Madrid are not doing great but they always seem to win (the establishment).
 
 Football is some serious stuff in most parts of the world outside of the good ol’ US of A so take it as serious as the locals do and you’ll easily make friends.
-
-This was originally written for my Substack: https://bhurghundii.substack.com/p/odd-travelling-tips-that-work

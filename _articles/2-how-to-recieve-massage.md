@@ -72,5 +72,3 @@ A lot of the tension we carry doesn’t come from nowhere — it’s often creat
 By giving someone a massage, you help their parasympathetic system switch on. And when they calm down, you calm down too.
 
 A peaceful environment creates a peaceful body. Sometimes the quickest way to feel better is to help someone else drop their tension first.
-
-This was written for my Substack originally: https://bhurghundii.substack.com/p/how-to-receive-a-massage

@@ -26,5 +26,3 @@ First off, that’s the Jimi Hendrix Experience. By far one of the most talented
 
 The closest thing I’ve seen to this in more recent times
 I’d probably have to go with Masego and FKJ’s Tadow. You can just tell they meet each other musically. It’s an amazing duet and the fact it was all done in one take, just is nuts.
-
-This was originally written for my Substack: https://bhurghundii.substack.com/p/jimi-hendrix-you-cannot-just-start

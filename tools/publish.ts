@@ -46,6 +46,8 @@ switch (target) {
 
     console.log('Publish all pages: PagePublisher.publishIndex()');
     PagePublisher.publishIndex();
+    console.log('Publish all pages: PagePublisher.publishContact()');
+    PagePublisher.publishContact();
     break;
 
   default:

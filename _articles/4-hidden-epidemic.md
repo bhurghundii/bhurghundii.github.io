@@ -5,8 +5,6 @@ subtitle: ""
 date: "2025.12.29"
 tags: "Albert"
 ---
-Originally written for my Substack: https://bhurghundii.substack.com/p/the-hidden-epidemic-of-loneliness
-
 Over the Christmas period, I delivered 100+ calls using AI to older adults experiencing loneliness as part of my work with [Albert, the AI companion which helps support older adults.](https://www.albertcares.com/)
 
 This work has prompted a broader reflection on the state of loneliness among older adults, which I wanted to touch upon this essay.

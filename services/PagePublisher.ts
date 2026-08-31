@@ -41,6 +41,15 @@ class PagePublisher {
     const DIST_PATH: string = path.join(__dirname, '../app/public/works.html');
     fs.writeFileSync(DIST_PATH, ejs.render(String(TEMPLATE), { works }));
   }
+
+  /**
+   * Builds `contact` page template file.
+   */
+  public static publishContact() {
+    const TEMPLATE: Buffer = fs.readFileSync(path.join(__dirname, '../app/templates/contact.ejs'));
+    const DIST_PATH: string = path.join(__dirname, '../app/public/contact.html');
+    fs.writeFileSync(DIST_PATH, ejs.render(String(TEMPLATE)));
+  }
 }
 
 export default PagePublisher;
