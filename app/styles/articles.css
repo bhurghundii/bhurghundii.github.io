@@ -51,3 +51,11 @@ body {
   display: block;
   margin-bottom: 50px;
 }
+
+#articles-intro {
+  font-size: 13px;
+}
+
+#articles-intro a {
+  text-decoration: underline;
+}
