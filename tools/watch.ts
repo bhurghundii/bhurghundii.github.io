@@ -4,6 +4,7 @@ import { exec } from 'child_process';
 import Watcher from 'watcher';
 
 import PagePublisher from '../services/PagePublisher';
+import ArticlePublisher from '../services/ArticlePublisher';
 
 const DIST = './app/public';
 
@@ -36,4 +37,15 @@ styleWatcher.on('all', () => {
       throw stderr;
     }
   });
+});
+
+const articleWatcher = new Watcher('_articles', { ignoreInitial: true });
+articleWatcher.on('all', (_, path) => {
+  console.log(path);
+  const match = path.match(/([^/]+)\.md$/);
+  if (match) {
+    const filename = `${match[1]}.md`;
+    const { article: { id } } = ArticlePublisher.getArticleByFilename(filename);
+    ArticlePublisher.publishArticles(id);
+  }
 });
