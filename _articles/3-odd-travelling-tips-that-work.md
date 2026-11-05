@@ -2,7 +2,7 @@
 id: 3
 title: "Odd Travelling Tips That Work"
 subtitle: ""
-date: "2025.12.08"
+date: "2026.11.02"
 tags: "yap"
 ---
 

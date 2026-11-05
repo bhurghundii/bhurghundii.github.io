@@ -1,6 +1,6 @@
 ---
 id: 5
-title: "I use WhatsApp as a Note Taking Tool"
+title: "Learning to Enjoy Start Up Life"
 subtitle: "Raising a Series B off this if anyone wants in"
 date: "2026.01.17"
 tags: "yap"

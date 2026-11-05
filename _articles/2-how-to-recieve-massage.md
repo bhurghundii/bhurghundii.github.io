@@ -2,7 +2,7 @@
 id: 2
 title: "How To Receive A Massage"
 subtitle: "Save thy money with this one easy hack!"
-date: "2025.11.30"
+date: "2026.10.29"
 tags: "yap"
 ---
 
