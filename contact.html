@@ -1,0 +1,77 @@
+<!doctypehtml>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhurghundii | Contact</title>
+
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+
+  <link rel="shortcut icon"href="./assets/favicon.ico"type="image/x-icon">
+  <link rel="preload"href="./styles/contact.css"as="style">
+  <link rel="stylesheet"href="./styles/contact.css">
+</head>
+<body>
+  <header id="top-container"role="navigation">
+    <nav>
+  <a class="logo-link"href="/">
+    <h1>Bhurghundii</h1>
+  </a>
+  <small>
+    <a id="now"class="info-link"href="/">Now</a> /
+    <a id="works"class="info-link"href="/works.html">Works</a> /
+    <a id="writing"class="info-link"href="/articles.html">Writing</a> /
+    <a id="contact"class="info-link"href="/contact.html">Contact</a>
+  </small>
+</nav>
+
+  </header>
+
+  <main id="main-container">
+    <p>Say hello. This goes straight to my inbox.</p>
+
+    <form id="contact-form">
+      <label for="contact-name">Name</label>
+      <input id="contact-name"name="name"required>
+
+      <label for="contact-email">Your email</label>
+      <input id="contact-email"type="email"name="email"required>
+
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message"name="message"required></textarea>
+
+      <button id="contact-submit"type="submit">Send</button>
+    </form>
+
+    <p id="contact-direct">
+      Prefer to write directly? Email <a href="mailto:cvikramad@gmail.com">cvikramad@gmail.com</a>,
+      or find me on the socials below.
+    </p>
+  </main>
+
+  <footer id="socials">
+  <a href="https://www.linkedin.com/in/vikramaditya-chhapwale-600309154/">LinkedIn</a>
+  <a href="https://www.instagram.com/bhurghundii/">Instagram</a>
+</footer>
+
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById('contact-name').value;
+      var email = document.getElementById('contact-email').value;
+      var message = document.getElementById('contact-message').value;
+
+      var subject = 'Message from ' + name;
+      var body = message + '\n\n— ' + name + ' (' + email + ')';
+
+      var mailto = 'mailto:cvikramad@gmail.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    });
+  </script>
+
+
